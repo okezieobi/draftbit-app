@@ -1,7 +1,7 @@
 {
   "name": "draftbit-app",
   "version": "0.0.0",
-  "main": "dist/www/firebase.js",
+  "main": "dist/bin/firebase.js",
   "directories": {},
   "scripts": {
     "dev": "DEBUG=draftbit-app:* nodemon --exec babel-node src/bin/www.js",
@@ -10,7 +10,7 @@
     "build": "npm run clean && npm run build-app",
     "build-app": "babel src -s -d dist --presets=@babel/env",
     "emulator": "firebase emulators:start --only functions",
-    "deploy": "npm firebase deploy --only functions"
+    "deploy": "firebase deploy --project draftbit-app --only functions"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
