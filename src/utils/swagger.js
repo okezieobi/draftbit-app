@@ -5,7 +5,7 @@ const swaggerDefinition = {
   info: {
     title: 'Template REST API', // Title of the documentation
     version: '1.0.0', // Version of the app
-    description: 'REST API for template app', // short description of the app
+    description: 'REST API for a draftbit app', // short description of the app
   },
   servers: [
     { url: '', description: 'Deployed server on Heroku' },
