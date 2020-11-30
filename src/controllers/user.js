@@ -1,6 +1,6 @@
 export default class UserController {
-  constructor(services) {
-    this.services = services.user;
+  constructor({ user }) {
+    this.services = user;
     this.login = this.login.bind(this);
     this.signup = this.signup.bind(this);
     this.findById = this.findById.bind(this);

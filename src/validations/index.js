@@ -12,8 +12,8 @@ const handleValidationErr = (req, res, next) => {
 
 const decodeJwt = async ({ headers }, res, next) => {
   await jwt.verify(headers)
-    .then(({ id }) => {
-      res.locals.userId = id;
+    .then(({ _id }) => {
+      res.locals.userId = _id;
       next();
     }).catch(next);
 };
