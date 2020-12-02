@@ -5,7 +5,7 @@
   "directories": {},
   "scripts": {
     "dev": "DEBUG=draftbit-app:* nodemon --exec babel-node src/bin/www.js",
-    "release": "npm run clean && npm run build && npm run deploy",
+    "release": "npm run clean && npm run build",
     "clean": "rm -rf dist && mkdir dist",
     "build": "npm run clean && npm run build-app",
     "build-app": "babel src -s -d dist --presets=@babel/env",
