@@ -8,7 +8,7 @@ const swaggerDefinition = {
     description: 'REST API for a draftbit app', // short description of the app
   },
   servers: [
-    { url: 'https://draftbit-app.herokuapp.com/api-docs', description: 'Deployed server on Heroku' },
+    { url: 'https://draftbit-app.herokuapp.com/api/v1', description: 'Deployed server on Heroku' },
     { url: 'http://localhost:3000/api/v1', description: 'Local development/testing server' },
   ],
   components: {
