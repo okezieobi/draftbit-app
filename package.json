@@ -9,8 +9,7 @@
     "clean": "rm -rf dist && mkdir dist",
     "build": "npm run clean && npm run build-app",
     "build-app": "babel src -s -d dist --presets=@babel/env",
-    "emulator": "firebase emulators:start --only functions",
-    "deploy": "firebase deploy --project draftbit-app --only functions"
+    "start": "node dist/bin/www.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
