@@ -3,7 +3,7 @@ import swaggerJSDoc from 'swagger-jsdoc';
 const swaggerDefinition = {
   openapi: '3.0.0',
   info: {
-    title: 'Template REST API', // Title of the documentation
+    title: 'Draftbit test app REST API', // Title of the documentation
     version: '1.0.0', // Version of the app
     description: 'REST API for a draftbit app', // short description of the app
   },
